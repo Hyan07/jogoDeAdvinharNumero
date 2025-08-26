@@ -41,9 +41,12 @@ function verificarChute(){
         exibirTextoNaTela('h1','ACERTOU');
         exibirTextoNaTela('p', `Você descobriu o numero secreto com ${tentativas} ${palavraTentativa}`);
         document.getElementById('reiniciar').removeAttribute('disabled');
-    }else{ if(chute > numerosPossiveis){
-        alert(`Até ${numerosPossiveis}, sua mula`)
-    }}{
+    }else{
+            if(chute > numerosPossiveis){
+                alert(`Até ${numerosPossiveis}, sua mula`)
+        }
+    }
+    
         if(chute > numeroSecreto){
         exibirTextoNaTela('p','Numero secreto é Menor');
     }
